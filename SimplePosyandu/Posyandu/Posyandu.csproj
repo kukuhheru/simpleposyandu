@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{578E667C-706D-40AC-84DF-82DAA4E3C1E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Posyandu</RootNamespace>
+    <AssemblyName>Posyandu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DirectShowLib-2005">
+      <HintPath>lib\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capture.cs" />
+    <Compile Include="frmCatatanPenyakitAnak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCatatanPenyakitAnak.Designer.cs">
+      <DependentUpon>frmCatatanPenyakitAnak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetailAnak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetailAnak.Designer.cs">
+      <DependentUpon>frmDetailAnak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetailPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetailPasien.Designer.cs">
+      <DependentUpon>frmDetailPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKMS.Designer.cs">
+      <DependentUpon>frmKMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMAnak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMAnak.Designer.cs">
+      <DependentUpon>frmMAnak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMPasien.Designer.cs">
+      <DependentUpon>frmMPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNeonatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNeonatus.Designer.cs">
+      <DependentUpon>frmNeonatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPasien.Designer.cs">
+      <DependentUpon>frmPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTakePhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTakePhoto.Designer.cs">
+      <DependentUpon>frmTakePhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="posyanduDataSet.cs">
+      <DependentUpon>posyanduDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="posyanduDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>posyanduDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCatatanPenyakitAnak.resx">
+      <DependentUpon>frmCatatanPenyakitAnak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailAnak.resx">
+      <DependentUpon>frmDetailAnak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetailPasien.resx">
+      <DependentUpon>frmDetailPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKMS.resx">
+      <DependentUpon>frmKMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMAnak.resx">
+      <DependentUpon>frmMAnak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMPasien.resx">
+      <DependentUpon>frmMPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNeonatus.resx">
+      <DependentUpon>frmNeonatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPasien.resx">
+      <DependentUpon>frmPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTakePhoto.resx">
+      <DependentUpon>frmTakePhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="posyanduDataSet.xsc">
+      <DependentUpon>posyanduDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="posyanduDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>posyanduDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="posyanduDataSet.xss">
+      <DependentUpon>posyanduDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\KMS.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
